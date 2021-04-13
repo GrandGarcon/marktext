@@ -1,6 +1,6 @@
 <p align="center"><img src="static/logo-small.png" alt="Mark Text" width="100" height="100"></p>
 
-<h1 align="center">Mark Text</h1>
+<h1 align="center">Mark text + JupyterNotebook </h1>
 
 <div align="center">
   <a href="https://twitter.com/intent/tweet?via=marktextme&url=https://github.com/marktext/marktext/&text=What%20do%20you%20want%20to%20say%20to%20app?&hashtags=happyMarkText">
@@ -8,8 +8,8 @@
   </a>
 </div>
 <div align="center">
-  <strong>:high_brightness: Next generation markdown editor :crescent_moon:</strong><br>
-  A simple and elegant open-source markdown editor that focused on speed and usability.<br>
+  <strong>:high_brightness: MD editor functionality combined with jupyter notebook :crescent_moon:</strong><br>
+  developing an fork of Mark-text for making light version IDE for writing executable documentations<br>
   <sub>Available for Linux, macOS and Windows.</sub>
 </div>
 
@@ -47,9 +47,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://marktext.app">
-      Website
-    </a>
     <span> | </span>
     <a href="https://github.com/marktext/marktext#features">
       Features
@@ -69,41 +66,11 @@
   </h3>
 </div>
 
-<div align="center">
-  <sub>Translations:</sub>
-  <a href="docs/i18n/zh_cn.md#readme">
-    <span>:cn:</span>
-  </a>
-  <a href="docs/i18n/zh_tw.md#readme">
-    <span>:taiwan:</span>
-  </a>
-  <a href="docs/i18n/pl.md#readme">
-    <span>:poland:</span>
-  </a>
-  <a href="docs/i18n/ja.md#readme">
-    <span>:jp:</span>
-  </a>
-  <a href="docs/i18n/french.md#readme">
-    <span>:fr:</span>
-  </a>
-  <a href="docs/i18n/tr.md#readme">
-    <span>:tr:</span>
-  </a>
-  <a href="docs/i18n/spanish.md#readme">
-    <span>:es:</span>
-  </a>
-  <a href="docs/i18n/pt.md#readme">
-    <span>:portugal:</span>
-  </a>
-  <a href="docs/i18n/ko.md#readme">
-    <span>:kr:</span>
-  </a>
-</div>
 
 <div align="center">
-  <sub>This Markdown editor that could. Built with ❤︎ by
-    <a href="https://github.com/Jocs">Jocs</a> and
-    <a href="https://github.com/marktext/marktext/graphs/contributors">
+  <sub>This Markdown editor that could be Jupyter notebooks . enhanced  with ❤︎ by
+    <a href="https://github.com/GrandGarcon">Dhruv Malik</a> and upcoming
+    <a href="https://github.com/GrandGarcon/marktext/graphs/contributors">
       contributors
     </a>
   </sub>
@@ -111,89 +78,28 @@
 
 <br />
 
-<h2 align="center">Supporting Mark Text</h2>
+<h2 align="center">Supporting  this project </h2>
 
-Mark Text is an MIT licensed open source project, and the latest version will always be downloadable for free from the GitHub release page. Mark Text is still in development, and its development is inseparable from all sponsors. I hope you join them:
-
-- [Become a backer or sponsor on Patreon](https://www.patreon.com/ranluo) or [One time donation](https://github.com/Jocs/sponsor.me)
-- [Become a backer or sponsor on Open Collective](https://opencollective.com/marktext)
-
-##### What's the difference between Patreon and Open Collective?
-
-Patreon: Funds will be directly sponsored to Luo Ran (@jocs) who created Mark Text and continues to maintain it.
-Open Collective: All expenses are transparent. The funds will be used for the development and maintenance of Mark Text, funding online and offline activities, and acquiring other necessary resources.
-Names and company logos of all sponsors (from both Patreon and Open Collective) will appear on the official website for Mark Text and in its README.md file.
-
-**Special Sponsors**
-
-<a href="https://www.dogedoge.com/">
- <img src="https://www.dogedoge.com/assets/new_logo.min.png" width="100" height="100">
-</a>
-
-**Platinum Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
- <img src="https://opencollective.com/marktext/tiers/platinum-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Gold Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/gold-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Silver Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/silver-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Bronze Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/bronze-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Backers**
-
-<a href="https://opencollective.com/marktext#backers">
-  <img src="https://opencollective.com/marktext/tiers/backer.svg?avatarHeight=36&width=600">
-</a>
+Feel free to add the issues and propositions based on the  ISSUE_TEMPLATES present in the .github folder 
 
 ## Screenshot
 
-![](docs/marktext.png?raw=true)
+## note : todo for the v0.1 version. 
+![](docs/)
 
 ## Features
 
-- Realtime preview (WYSIWYG) and a clean and simple interface to get a distraction-free writing experience.
-- Support [CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) and selective support [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).
-- Markdown extensions such as math expressions (KaTeX), front matter and emojis.
-- Support paragraphs and inline style shortcuts to improve your writing efficiency.
-- Output **HTML** and **PDF** files.
-- Various themes: **Cadmium Light**, **Material Dark** etc.
-- Various editing modes: **Source Code mode**, **Typewriter mode**, **Focus mode**.
-- Paste images directly from clipboard
+Support for all the major features provided by marktest but includes majorly the following new changes :
+- Allowing  running of terminal commands and runtime enviornments for the diffrent code package enviornments (js , python) for better description in the technical documentations . 
+- Intellisense support. 
+-  working collaboratively with multiple users ( similar to the liveshare).
+- And much more .....  
+- support of the commands written with `/` . 
+So in brief , the aim of the project is to blurr the line between the vscode and the neat markdown application for making an intermediate IDE for 
 
-<h4 align="center">:crescent_moon:themes:high_brightness:</h4>
+## Why write another intelligent markdown editor ?
 
-| Cadmium Light                                     | Dark                                            |
-|:-------------------------------------------------:|:-----------------------------------------------:|
-| ![](docs/themeImages/cadmium-light.png?raw=true)  | ![](docs/themeImages/dark.png?raw=true)         |
-| Graphite Light                                    | Material Dark                                   |
-| ![](docs/themeImages/graphite-light.png?raw=true) | ![](docs/themeImages/materal-dark.png?raw=true) |
-| Ulysses Light                                     | One Dark                                        |
-| ![](docs/themeImages/ulysses-light.png?raw=true)  | ![](docs/themeImages/one-dark.png?raw=true)     |
-
-<h4 align="center">:smile_cat:Edit modes:dog:</h4>
-
-| Source Code          | Typewriter               | Focus               |
-|:--------------------:|:------------------------:|:-------------------:|
-| ![](docs/source.gif) | ![](docs/typewriter.gif) | ![](docs/focus.gif) |
-
-## Why write another editor?
-
-1. I love writing. I have used a lot of markdown editors, yet there is still not an editor that can fully meet my needs. I don't like to be disturbed when I write by some unbearable bug. **Mark Text** uses virtual DOM to render pages which has the added benefits of being highly efficient and being open source. That way anyone who loves markdown and writing can use Mark Text.
+1. To understand the desktop web app developement , along with giving  non expert developers  ,who feel little overwhelmed with the lots of features of vscode ide , to have minimalistic , nice looking editor & at same time getting the 
 2. As mentioned above, **Mark Text** is completely free and open source and will be open source forever. We hope that all markdown lovers will contribute their own code and help develop **Mark Text** into a popular markdown editor.
 3. There are many markdown editors and all have their own merits, some have features which others don't. It's difficult to satisfy each markdown users' needs but we hope **Mark Text** will be able to satisfy each markdown user as much as possible. Although the latest **Mark Text** is still not perfect, we will try to make it as best as we possibly can.
 
@@ -205,7 +111,8 @@ Names and company logos of all sponsors (from both Patreon and Open Collective) 
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.16.3/marktext.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.16.3/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.16.3/marktext-x86_64.AppImage) |
 
-Want to see new features of the latest version? Please refer to [CHANGELOG](.github/CHANGELOG.md).
+## TODO : 
+Setting up the changelog  for the initial standards . 
 
 #### macOS
 
@@ -235,7 +142,7 @@ All binaries for Linux, macOS and Windows can be downloaded from the [release pa
 
 ## Development
 
-If you wish to build **Mark Text** yourself, please check out our [build instructions](docs/dev/BUILD.md).
+If you wish to build **MarkDown IDE** yourself, please check out our [build instructions](docs/dev/BUILD.md).
 
 - [User documentation](docs/README.md)
 - [Developer documentation](docs/dev/README.md)

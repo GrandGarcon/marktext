@@ -39,3 +39,7 @@ ipcRenderer.on('mt::some-event-name-response', (event, arg1, arg2) => {
 
 ipcRenderer.send('mt::some-event-name-response', 'arg 1', 'arg 2')
 ```
+
+## TODO :
+
+writing an detailed specification on how you will integrate various IDE features (code completion  , intellisense ) intermingled with the normal text processor and cli integration. 

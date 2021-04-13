@@ -1,3 +1,16 @@
+## 0.10.0 
+
+**changes:**
+
+- Took the fork of the marktext and adding the features of IDE. 
+
+
+
+
+
+
+
+
 ## 0.16.3
 
 **:warning:Breaking Changes:**

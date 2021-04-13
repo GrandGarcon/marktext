@@ -5,10 +5,12 @@ import { isDirectory } from 'common/filesystem'
 import parseArgs from './parser'
 import { dumpKeyboardInformation } from '../keyboard'
 import { getPath } from '../utils'
+//TODO:@Dhruv :-> how to add the wasm in the command line 
+import {webassemblyjs} from '../../../node_modules/@webassemblyjs'
 
 const write = s => process.stdout.write(s)
 const writeLine = s => write(s + '\n')
-
+// TODO@Dhruv : adding the other features for getting 
 const cli = () => {
   let argv = process.argv.slice(1)
   if (process.env.NODE_ENV === 'development') {
@@ -31,18 +33,26 @@ const cli = () => {
     -v, --verbose                 Be verbose
         --version                 Print version information
     -h, --help                    Print this help message
+    -w  --render                  create an web application from the given documentation
+    -g  --github                  committing the particular   files to the github repository. 
 `)
     process.exit(0)
   }
 
   if (args['--version']) {
-    writeLine(`Mark Text: ${global.MARKTEXT_VERSION_STRING}`)
+    writeLine(`Mark Text code IDE: ${global.MARKTEXT_VERSION_STRING}`)
     writeLine(`Node.js: ${process.versions.node}`)
     writeLine(`Electron: ${process.versions.electron}`)
     writeLine(`Chromium: ${process.versions.chrome}`)
     writeLine(`OS: ${os.type()} ${os.arch()} ${os.release()}`)
     process.exit(0)
   }
+
+  if (args['--wasm'] )
+  {
+    console.log("TODO:")
+  }
+
 
   if (args['--dump-keyboard-layout']) {
     writeLine(dumpKeyboardInformation())

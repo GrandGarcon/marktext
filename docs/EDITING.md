@@ -10,6 +10,31 @@ Mark Text shows you formatted text in realtime while you can simply write and ed
 
 You can select text with your mouse cursor, double click on a word or use the keyboard <kbd>Shift</kbd>+<kbd>Arrow Keys</kbd>.
 
+## Adding the  running script 
+
+
+You can mention the script /component that you want to run under quotes as follows :
+```typescript
+import ""
+async function helloworld() {
+.....
+
+}
+
+module.export = {
+  helloWorld
+}
+
+```
+this will support the importing of  npm , yarn and deno packages . and also rendering the react components 
+
+
+
+### TODO : add further detailed discussion as the features are developed.
+
+
+
+
 **Format overlay:**
 
 The format overlay is a pop up that automatically appears when you're selecting text. You can easily transform text and inline markdown but also remove formatting.

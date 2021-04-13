@@ -19,3 +19,8 @@ The sidebar is an optional feature of Mark Text that contains three panels and h
 ### Editor
 
 The editor is the core element that hosts the realtime preview editor called Muya and consists of three parts. Tabs are located at the top and at the bottom the per-tab notification bar is located for events like file changed or deleted. The main part is the editor that is either provided by Muya or CodeMirror for the source-code editor. There are multiple overlays available like inline toolbar, emoji picker, quick insert or image tools.
+
+
+## embedded components (terminal or running ui):
+
+TBD

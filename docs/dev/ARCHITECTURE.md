@@ -19,13 +19,16 @@
 
 ## Introduction to Mark Text
 
-Mark Text is a realtime preview (WYSIWYG) editor for markdown with various markdown extensions and our philosophy is to keep things clean, simple and minimal. The application is build with HTML, JS and CSS on top of Electron. Currently we're using a few native node libraries and our UI is build with Vue/Vuex. Mark Text can be split in three parts: the core called Muya, the main- and renderer process.
+MarkTextCode is a minimal ,  realtime preview (WYSIWYG) editor for markdown along with support of code snippets ( just like jupyter notebook) but keeping the feel of professional docs and support of dynamic runtime enviornments to provide the unique  packaged editor that reduces the need of coder as vim does (by putting all the  vscode bundles accessed by `/<text>` command  along with ```<language>  <code>  ``` for writing  the  runtime scripts). 
 
-Muya provides realtime preview and markdown editing via multiple modules based on a block structure. You can imagine it as the editor backend with modules for markdown parsing, data store as block structure, markdown document transformations according CommonMark and GitHub Flavored Markdown specification with some extra specifications, event listeners and an exporter to generate standalone HTML and markdown files but also to generate the WYSIWYG editor. Muya is single threaded as well as Mark Text but use asynchronous functions to boost performance.
+Muya provides realtime preview and markdown editing via multiple modules based on diffrent specifications defined (commonMark / Github Flavored Markdown). along with possiblity of providing embedded scripting feature ( supported by wasm ) to run the scripts / embedded  UI components and multimedia as an fluent documentation.  it can be used as multithreaded to boost the performance .
 
 > NOTE: Mark Text's source-code editor is provided by CodeMirror and not well optimized nor feature rich. It's not part of Muya and an editor (renderer process) feature that load the markdown text from Muya (export), operate on it and re-import the text into Muya when switching to preview mode.
 
 > NOTE: Muya requires a core refactoring to provide better modularization, APIs and plugins. Furthermore, the data structure need improvements for better performance and stability.
+
+> NOTE: on the part of new features , [WASM](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts) is currently in early phase and will  indeed take time for being more portable to run fluently runtime for all languages , but for initial phases , i will develop it to support the snippets for npm , rust runtimes . 
+
 
 The editor represents the view and is split into two parts. The first is the main process that have full access to Electron and all OS features. It's mainly used for IO, user interaction with native dialogs and controlls the editor windows. The main process should not (be long) blocked by synchronous operations. The renderer process is the real editor and also a host for Muya. It's responsible for all graphical elements (`src/renderer/components`), data (`src/renderer/store`) and data synchronization. A renderer process is spawned for each window, operates on its own and is controlled by the main process. It contains two text editors: the realtime preview editor provided by Muya and the source-code one by CodeMirror with special features such as tabs, sidebar and editing features.
 
@@ -43,6 +46,7 @@ TBD
 - Overview about Muya components
 - How Muya work internal
 - Data structure
+- And how there will be possible integration of wasm and modules fo rendering the webapp snippets. 
 
 ### Main- and renderer process communication
 
@@ -69,3 +73,13 @@ TBD
 6. Both Muya and the source-code editor listen on this event and change the markdown document accordingly.
 
 > NOTE: We currently have no high level APIs to make changes to the document text or lines automatically. All modifications need user interaction!
+
+
+**steps of adding an web assembly VM:**
+
+TODO
+
+
+**steps of integrating some slash commands**
+
+TBD : get example from Vscode runtime.

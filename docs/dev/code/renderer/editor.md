@@ -115,3 +115,7 @@ TBD
 ### Document
 
 TBD
+
+### terminal 
+
+following the given type from the [vscode](https://github.com/microsoft/vscode/blob/main/src/vs/platform/terminal/common/terminal.ts).Specifically on integrating WindowsShellType , TerminalShellType and others . 
